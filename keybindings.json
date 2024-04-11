@@ -1,0 +1,499 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+oem_1",
+        "command": "emacs.cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-emacs.cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+oem_1",
+        "command": "emacs.cursorRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-emacs.cursorRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "emacs.cursorDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-emacs.cursorDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+k",
+        "command": "emacs.cursorDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-emacs.cursorDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "emacs.cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "left",
+        "command": "-emacs.cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-emacs.cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "emacs.cursorLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-emacs.cursorLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "emacs.cursorUp",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-emacs.cursorUp",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+l",
+        "command": "emacs.cursorUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-emacs.cursorUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "emacs.cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "-emacs.cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+oem_1",
+        "command": "emacs.cursorWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "-emacs.cursorWordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+m",
+        "command": "emacs.enterMarkMode",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-emacs.enterMarkMode",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x ctrl+e",
+        "command": "jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+x ctrl+e",
+        "command": "jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 5
+        }
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 5
+        }
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "alt+down",
+        "command": "workbench.action.navigateDown",
+        "args": {
+            "direction": "down"
+        }
+    },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.navigateUp",
+        "args": {
+            "direction": "up"
+        }
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateRight",
+        "args": {
+            "direction": "right"
+        }
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateLeft",
+        "args": {
+            "direction": "left"
+        }
+    },
+    {
+        "key": "F12",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "f4",
+        "command": "kb-macro.finishRecording",
+        "when": "kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-kb-macro.finishRecording",
+        "when": "kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "f3",
+        "command": "kb-macro.startRecording",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-kb-macro.startRecording",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "f4",
+        "command": "kb-macro.finishRecording",
+        "when": "kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "ctrl+shift+alt+r",
+        "command": "-kb-macro.finishRecording",
+        "when": "kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "f3",
+        "command": "kb-macro.startRecording",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "ctrl+shift+alt+r",
+        "command": "-kb-macro.startRecording",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "f4",
+        "command": "kb-macro.playback",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "-kb-macro.playback",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option1'"
+    },
+    {
+        "key": "f4",
+        "command": "kb-macro.playback",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "ctrl+shift+alt+p",
+        "command": "-kb-macro.playback",
+        "when": "!kb-macro.recording && config.keyboardMacro.recordingShortcuts == 'Option2'"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f3",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "kb-macro.wrap",
+        "when": "editorFocus && kb-macro.active"
+    },
+    {
+        "key": "f3",
+        "command": "-kb-macro.wrap",
+        "when": "editorFocus && kb-macro.active"
+    },
+    {
+        "key": "ctrl+shift+alt+f3",
+        "command": "kb-macro.wrap",
+        "when": "kb-macro.active && listFocus && listSupportsFind"
+    },
+    {
+        "key": "f3",
+        "command": "-kb-macro.wrap",
+        "when": "kb-macro.active && listFocus && listSupportsFind"
+    },
+    {
+        "key": "ctrl+shift+alt+f3",
+        "command": "kb-macro.wrap",
+        "when": "kb-macro.active && terminalFindFocused && terminalHasBeenCreated || kb-macro.active && terminalFindFocused && terminalProcessSupported || kb-macro.active && terminalFocusInAny && terminalHasBeenCreated || kb-macro.active && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "f3",
+        "command": "-kb-macro.wrap",
+        "when": "kb-macro.active && terminalFindFocused && terminalHasBeenCreated || kb-macro.active && terminalFindFocused && terminalProcessSupported || kb-macro.active && terminalFocusInAny && terminalHasBeenCreated || kb-macro.active && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+f3",
+        "command": "list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "f3",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.terminal.findNext",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "f3",
+        "command": "-workbench.action.terminal.findNext",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+f4",
+        "command": "references-view.next",
+        "when": "reference-list.hasResult && references-view.canNavigate"
+    },
+    {
+        "key": "f4",
+        "command": "-references-view.next",
+        "when": "reference-list.hasResult && references-view.canNavigate"
+    },
+    {
+        "key": "ctrl+shift+alt+f4",
+        "command": "goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "f4",
+        "command": "-goToNextReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+f4",
+        "command": "kb-macro.wrap",
+        "when": "inReferenceSearchEditor && kb-macro.active || kb-macro.active && referenceSearchVisible"
+    },
+    {
+        "key": "f4",
+        "command": "-kb-macro.wrap",
+        "when": "inReferenceSearchEditor && kb-macro.active || kb-macro.active && referenceSearchVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+f4",
+        "command": "kb-macro.wrap",
+        "when": "hasSearchResult && kb-macro.active || inSearchEditor && kb-macro.active"
+    },
+    {
+        "key": "f4",
+        "command": "-kb-macro.wrap",
+        "when": "hasSearchResult && kb-macro.active || inSearchEditor && kb-macro.active"
+    },
+    {
+        "key": "ctrl+shift+alt+f4",
+        "command": "kb-macro.wrap",
+        "when": "kb-macro.active && reference-list.hasResult && references-view.canNavigate"
+    },
+    {
+        "key": "f4",
+        "command": "-kb-macro.wrap",
+        "when": "kb-macro.active && reference-list.hasResult && references-view.canNavigate"
+    },
+    {
+        "key": "ctrl+shift+alt+oem_1",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "alt+oem_1",
+        "command": "-closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+oem_1",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+oem_1",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "toggleSearchEditorContextLines",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "alt+l",
+        "command": "-toggleSearchEditorContextLines",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "toggleFindInSelection",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "-toggleFindInSelection",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "kb-macro.wrap",
+        "when": "inSearchEditor && kb-macro.active"
+    },
+    {
+        "key": "alt+l",
+        "command": "-kb-macro.wrap",
+        "when": "inSearchEditor && kb-macro.active"
+    },
+    {
+        "key": "alt+l",
+        "command": "-kb-macro.wrap",
+        "when": "editorFocus && kb-macro.active"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "kb-macro.wrap",
+        "when": "inKeybindings && inKeybindingsSearch && kb-macro.active"
+    },
+    {
+        "key": "alt+k",
+        "command": "-kb-macro.wrap",
+        "when": "inKeybindings && inKeybindingsSearch && kb-macro.active"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "alt+k",
+        "command": "-keybindings.editor.recordSearchKeys",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "notebook.cell.joinBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "alt+win+j",
+        "command": "-notebook.cell.joinBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "notebook.cell.joinAbove",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "shift+alt+win+j",
+        "command": "-notebook.cell.joinAbove",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+alt+shift+k",
+        "command": "cursorPageDown"
+    },
+    {
+        "key": "ctrl+alt+shift+l",
+        "command": "cursorPageUp"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "rust run main", // replace with the label of your task
+        "when": "editorTextFocus && editorLangId == rust"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction"
+    }
+]
