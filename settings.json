@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 13,
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "CodeGPT.apiKey": "OpenAI",
+    "workbench.editorAssociations": {
+        "*.xlsm": "gc-excelviewer-excel-editor"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.largeFileOptimizations": false,
+    "workbench.editorLargeFileConfirmation": 50,
+    "workbench.colorTheme": "Higher Contrast Zenburn"
+}

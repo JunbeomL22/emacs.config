@@ -495,5 +495,77 @@
     {
         "key": "ctrl+shift+down",
         "command": "editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "ctrl+m ctrl+a",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\alpha"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+d",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\delta"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+e",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\epsilon"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\phi"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\upsilon"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+z",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\zeta"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\xi"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+j",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\theta"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\tau"
+        }
     }
 ]
